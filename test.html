@@ -1,0 +1,763 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Eucerin</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="HandheldFriendly" content="true">
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
+        <meta property="twitter:description" content="" />
+        <link rel="image_src" href="" />
+
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+
+        <link href="static/css/test.min.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body class="page">
+
+        <form class="test">
+            <div class="test__status">
+                <div class="wrapper">
+                    <div class="test__text">
+                        Вопрос <span id="current-test-answer">1</span> из 10
+                    </div>
+                    <div class="test__rounds">
+                        <div class="test__round active"></div>
+                        <div class="test__round"></div>
+                        <div class="test__round"></div>
+                        <div class="test__round"></div>
+                        <div class="test__round"></div>
+                        <div class="test__round"></div>
+                        <div class="test__round"></div>
+                        <div class="test__round"></div>
+                        <div class="test__round"></div>
+                        <div class="test__round"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 0...100% -->
+            <div class="test__container active">
+                <!-- .quest-wrong .quest-correct -->
+                <div class="test__block">
+                    <div class="wrapper">
+                        <div class="test__dialog">
+                            1. Против каких видов пигментации эффективен Eucerin Anti-Pigment?
+                        </div>
+                        <div class="test__answers">
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest1" value="Фотопигментация" data-corect="true">
+                                <span class="answer">Фотопигментация</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest1" value="Возрастная" data-corect="true">
+                                <span class="answer">Возрастная</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest1" value="Гормональная" data-corect="true">
+                                <span class="answer">Гормональная</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest1" value="Поствоспалительная" data-corect="true">
+                                <span class="answer">Поствоспалительная</span>
+                            </label>
+                        </div>
+                        <div class="test__result-yes hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
+                                    fill="#89BBE5" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Верно!
+                            </div>
+                        </div>
+                        <div class="test__result-no hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L6.58579 8L5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071C5.68342 11.0976 6.31658 11.0976 6.70711 10.7071L8 9.41421L9.29289 10.7071C9.68342 11.0976 10.3166 11.0976 10.7071 10.7071C11.0976 10.3166 11.0976 9.68342 10.7071 9.29289L9.41421 8L10.7071 6.70711C11.0976 6.31658 11.0976 5.68342 10.7071 5.29289C10.3166 4.90237 9.68342 4.90237 9.29289 5.29289L8 6.58579L6.70711 5.29289Z"
+                                    fill="#A70532" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Не верно! Правильный ответ:
+                            </div>
+                            <div class="test__result-text">
+                                <ul>
+                                    <li>Фотопигментация</li>
+                                    <li>возрастная</li>
+                                    <li>гормональная</li>
+                                    <li>поствоспалительная</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test__answer-buttons">
+                    <div class="wrapper">
+                        <div class="button button-show-result disabled">
+                            Подтвердить ответ
+                        </div>
+                        <div class="button next-question hidden">
+                            Следующий вопрос
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__container">
+                <!-- .quest-wrong .quest-correct -->
+                <div class="test__block">
+                    <div class="wrapper">
+                        <div class="test__dialog">
+                            2. Для коррекции каких видов нарушения пигментации предназначен Eucerin Anti-Pigment?
+                        </div>
+                        <div class="test__answers">
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest2" value="веснушки" data-corect="true">
+                                <span class="answer">веснушки</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest2" value="витилиго">
+                                <span class="answer">витилиго</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest2" value="мелазма" data-corect="true">
+                                <span class="answer">мелазма</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest2" value="постакне" data-corect="true">
+                                <span class="answer">постакне</span>
+                            </label>
+                        </div>
+                        <div class="test__result-yes hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
+                                    fill="#89BBE5" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Верно!
+                            </div>
+                        </div>
+                        <div class="test__result-no hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L6.58579 8L5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071C5.68342 11.0976 6.31658 11.0976 6.70711 10.7071L8 9.41421L9.29289 10.7071C9.68342 11.0976 10.3166 11.0976 10.7071 10.7071C11.0976 10.3166 11.0976 9.68342 10.7071 9.29289L9.41421 8L10.7071 6.70711C11.0976 6.31658 11.0976 5.68342 10.7071 5.29289C10.3166 4.90237 9.68342 4.90237 9.29289 5.29289L8 6.58579L6.70711 5.29289Z"
+                                    fill="#A70532" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Не верно! Правильный ответ:
+                            </div>
+                            <div class="test__result-text">
+                                <ul>
+                                    <li>веснушки</li>
+                                    <li>мелазма</li>
+                                    <li>постакне</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test__answer-buttons">
+                    <div class="wrapper">
+                        <div class="button button-show-result disabled">
+                            Подтвердить ответ
+                        </div>
+                        <div class="button next-question hidden">
+                            Следующий вопрос
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__container">
+                <!-- .quest-wrong .quest-correct -->
+                <div class="test__block">
+                    <div class="wrapper">
+                        <div class="test__dialog">
+                            3. Как быстро можно заметить первый результат от применения средств Eucerin Anti-Pigment?
+                        </div>
+                        <div class="test__answers">
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest3" value="Через 2 часа">
+                                <span class="answer">Через 2 часа</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest3" value="Через 2 дня">
+                                <span class="answer">Через 2 дня</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest3" value="Через 2 недели" data-corect="true">
+                                <span class="answer">Через 2 недели</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest3" value="Через 2 месяца">
+                                <span class="answer">Через 2 месяца</span>
+                            </label>
+                        </div>
+                        <div class="test__result-yes hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
+                                    fill="#89BBE5" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Верно!
+                            </div>
+                        </div>
+                        <div class="test__result-no hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L6.58579 8L5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071C5.68342 11.0976 6.31658 11.0976 6.70711 10.7071L8 9.41421L9.29289 10.7071C9.68342 11.0976 10.3166 11.0976 10.7071 10.7071C11.0976 10.3166 11.0976 9.68342 10.7071 9.29289L9.41421 8L10.7071 6.70711C11.0976 6.31658 11.0976 5.68342 10.7071 5.29289C10.3166 4.90237 9.68342 4.90237 9.29289 5.29289L8 6.58579L6.70711 5.29289Z"
+                                    fill="#A70532" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Не верно! Правильный ответ:
+                            </div>
+                            <div class="test__result-text">
+                                <ul>
+                                    <li>Через 2 недели</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test__answer-buttons">
+                    <div class="wrapper">
+                        <div class="button button-show-result disabled">
+                            Подтвердить ответ
+                        </div>
+                        <div class="button next-question hidden">
+                            Следующий вопрос
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__container">
+                <!-- .quest-wrong .quest-correct -->
+                <div class="test__block">
+                    <div class="wrapper">
+                        <div class="test__dialog">
+                            4. Какие продукты Eucerin подходят для коррекции гиперпигментации?
+                        </div>
+                        <div class="test__answers">
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest4" value="Двойная сыворотка против пигментации" data-corect="true">
+                                <span class="answer">Двойная сыворотка против пигментации</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest4" value="Дневной крем против пигментации" data-corect="true">
+                                <span class="answer">Дневной крем против пигментации</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest4" value="Ночной крем против пигментации" data-corect="true">
+                                <span class="answer">Ночной крем против пигментации</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest4" value="Солнцезащитный флюид против пигментации" data-corect="true">
+                                <span class="answer">Солнцезащитный флюид против пигментации</span>
+                            </label>
+                        </div>
+                        <div class="test__result-yes hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
+                                    fill="#89BBE5" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Верно!
+                            </div>
+                        </div>
+                        <div class="test__result-no hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L6.58579 8L5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071C5.68342 11.0976 6.31658 11.0976 6.70711 10.7071L8 9.41421L9.29289 10.7071C9.68342 11.0976 10.3166 11.0976 10.7071 10.7071C11.0976 10.3166 11.0976 9.68342 10.7071 9.29289L9.41421 8L10.7071 6.70711C11.0976 6.31658 11.0976 5.68342 10.7071 5.29289C10.3166 4.90237 9.68342 4.90237 9.29289 5.29289L8 6.58579L6.70711 5.29289Z"
+                                    fill="#A70532" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Не верно! Правильный ответ:
+                            </div>
+                            <div class="test__result-text">
+                                <ul>
+                                    <li>Двойная сыворотка против пигментации</li>
+                                    <li>Дневной крем против пигментации</li>
+                                    <li>Ночной крем против пигментации</li>
+                                    <li>Солнцезащитный флюид против пигментации</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test__answer-buttons">
+                    <div class="wrapper">
+                        <div class="button button-show-result disabled">
+                            Подтвердить ответ
+                        </div>
+                        <div class="button next-question hidden">
+                            Следующий вопрос
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__container">
+                <!-- .quest-wrong .quest-correct -->
+                <div class="test__block">
+                    <div class="wrapper">
+                        <div class="test__dialog">
+                            5. Верно ли утверждение, что Eucerin Anti-Pigment эффективен против всех видов меланиновых гиперпигментаций?
+                        </div>
+                        <div class="test__answers">
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest5" value="Верно" data-corect="true">
+                                <span class="answer">Верно</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest5" value="Неверно">
+                                <span class="answer">Неверно</span>
+                            </label>
+                        </div>
+                        <div class="test__result-yes hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
+                                    fill="#89BBE5" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Верно!
+                            </div>
+                        </div>
+                        <div class="test__result-no hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L6.58579 8L5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071C5.68342 11.0976 6.31658 11.0976 6.70711 10.7071L8 9.41421L9.29289 10.7071C9.68342 11.0976 10.3166 11.0976 10.7071 10.7071C11.0976 10.3166 11.0976 9.68342 10.7071 9.29289L9.41421 8L10.7071 6.70711C11.0976 6.31658 11.0976 5.68342 10.7071 5.29289C10.3166 4.90237 9.68342 4.90237 9.29289 5.29289L8 6.58579L6.70711 5.29289Z"
+                                    fill="#A70532" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Не верно! Правильный ответ:
+                            </div>
+                            <div class="test__result-text">
+                                <ul>
+                                    <li>Верно</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test__answer-buttons">
+                    <div class="wrapper">
+                        <div class="button button-show-result disabled">
+                            Подтвердить ответ
+                        </div>
+                        <div class="button next-question hidden">
+                            Следующий вопрос
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__container">
+                <!-- .quest-wrong .quest-correct -->
+                <div class="test__block">
+                    <div class="wrapper">
+                        <div class="test__dialog">
+                            6. С какого возраста можно рекомендовать средства с тиамидолом?
+                        </div>
+                        <div class="test__answers">
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest6" value="С 18 лет">
+                                <span class="answer">С 18 лет</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest6" value="С 14 лет" data-corect="true">
+                                <span class="answer">С 14 лет</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest6" value="С 25 лет">
+                                <span class="answer">С 25 лет</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest6" value="С 16 лет">
+                                <span class="answer">С 16 лет</span>
+                            </label>
+                        </div>
+                        <div class="test__result-yes hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
+                                    fill="#89BBE5" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Верно!
+                            </div>
+                        </div>
+                        <div class="test__result-no hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L6.58579 8L5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071C5.68342 11.0976 6.31658 11.0976 6.70711 10.7071L8 9.41421L9.29289 10.7071C9.68342 11.0976 10.3166 11.0976 10.7071 10.7071C11.0976 10.3166 11.0976 9.68342 10.7071 9.29289L9.41421 8L10.7071 6.70711C11.0976 6.31658 11.0976 5.68342 10.7071 5.29289C10.3166 4.90237 9.68342 4.90237 9.29289 5.29289L8 6.58579L6.70711 5.29289Z"
+                                    fill="#A70532" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Не верно! Правильный ответ:
+                            </div>
+                            <div class="test__result-text">
+                                <ul>
+                                    <li>С 14 лет</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test__answer-buttons">
+                    <div class="wrapper">
+                        <div class="button button-show-result disabled">
+                            Подтвердить ответ
+                        </div>
+                        <div class="button next-question hidden">
+                            Следующий вопрос
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__container">
+                <!-- .quest-wrong .quest-correct -->
+                <div class="test__block">
+                    <div class="wrapper">
+                        <div class="test__dialog">
+                            7. Для какого типа кожи рекомендуется использовать средства Eucerin Anti-Pigment?
+                        </div>
+                        <div class="test__answers">
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest7" value="Нормальный и комбинированный тип кожи">
+                                <span class="answer">Нормальный и комбинированный тип кожи</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest7" value="Сухой тип кожи">
+                                <span class="answer">Сухой тип кожи</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest7" value="Для жирной кожи, склонной к акне">
+                                <span class="answer">Для жирной кожи, склонной к акне</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest7" value="Для всех типов кожи" data-corect="true">
+                                <span class="answer">Для всех типов кожи</span>
+                            </label>
+                        </div>
+                        <div class="test__result-yes hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
+                                    fill="#89BBE5" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Верно!
+                            </div>
+                        </div>
+                        <div class="test__result-no hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L6.58579 8L5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071C5.68342 11.0976 6.31658 11.0976 6.70711 10.7071L8 9.41421L9.29289 10.7071C9.68342 11.0976 10.3166 11.0976 10.7071 10.7071C11.0976 10.3166 11.0976 9.68342 10.7071 9.29289L9.41421 8L10.7071 6.70711C11.0976 6.31658 11.0976 5.68342 10.7071 5.29289C10.3166 4.90237 9.68342 4.90237 9.29289 5.29289L8 6.58579L6.70711 5.29289Z"
+                                    fill="#A70532" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Не верно! Правильный ответ:
+                            </div>
+                            <div class="test__result-text">
+                                <ul>
+                                    <li>Для всех типов кожи</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test__answer-buttons">
+                    <div class="wrapper">
+                        <div class="button button-show-result disabled">
+                            Подтвердить ответ
+                        </div>
+                        <div class="button next-question hidden">
+                            Следующий вопрос
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__container">
+                <!-- .quest-wrong .quest-correct -->
+                <div class="test__block">
+                    <div class="wrapper">
+                        <div class="test__dialog">
+                            8. Благодаря какому запатентованному активному ингредиенту средства Eucerin эффективно уменьшают гиперпигментацию?
+                        </div>
+                        <div class="test__answers">
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest8" value="Тиамидол" data-corect="true">
+                                <span class="answer">Тиамидол</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest8" value="Ликохалкон А">
+                                <span class="answer">Ликохалкон А</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest8" value="Пантенол">
+                                <span class="answer">Пантенол</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest8" value="Гиалуроновая кислота">
+                                <span class="answer">Гиалуроновая кислота</span>
+                            </label>
+                        </div>
+                        <div class="test__result-yes hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
+                                    fill="#89BBE5" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Верно!
+                            </div>
+                        </div>
+                        <div class="test__result-no hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L6.58579 8L5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071C5.68342 11.0976 6.31658 11.0976 6.70711 10.7071L8 9.41421L9.29289 10.7071C9.68342 11.0976 10.3166 11.0976 10.7071 10.7071C11.0976 10.3166 11.0976 9.68342 10.7071 9.29289L9.41421 8L10.7071 6.70711C11.0976 6.31658 11.0976 5.68342 10.7071 5.29289C10.3166 4.90237 9.68342 4.90237 9.29289 5.29289L8 6.58579L6.70711 5.29289Z"
+                                    fill="#A70532" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Не верно! Правильный ответ:
+                            </div>
+                            <div class="test__result-text">
+                                <ul>
+                                    <li>Тиамидол</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test__answer-buttons">
+                    <div class="wrapper">
+                        <div class="button button-show-result disabled">
+                            Подтвердить ответ
+                        </div>
+                        <div class="button next-question hidden">
+                            Следующий вопрос
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__container">
+                <!-- .quest-wrong .quest-correct -->
+                <div class="test__block">
+                    <div class="wrapper">
+                        <div class="test__dialog">
+                            9. Выберите верные утверждения о продуктах Eucerin Anti- Pigment:
+                        </div>
+                        <div class="test__answers">
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest9" value="Содержат одинаковую концентрацию тиамидола в составе" data-corect="true">
+                                <span class="answer">Содержат одинаковую концентрацию тиамидола в составе</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest9" value="Не наносить более 4-х раз в день и на кожу вокруг глаз" data-corect="true">
+                                <span class="answer">Не наносить более 4-х раз в день и на кожу вокруг глаз</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest9" value="Видимый эффект от применения уже через 2 недели" data-corect="true">
+                                <span class="answer">Видимый эффект от применения уже через 2 недели</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest9" value="Эффективны против всех видов меланиновой гиперпигментации" data-corect="true">
+                                <span class="answer">Эффективны против всех видов меланиновой гиперпигментации</span>
+                            </label>
+                        </div>
+                        <div class="test__result-yes hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
+                                    fill="#89BBE5" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Верно!
+                            </div>
+                        </div>
+                        <div class="test__result-no hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L6.58579 8L5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071C5.68342 11.0976 6.31658 11.0976 6.70711 10.7071L8 9.41421L9.29289 10.7071C9.68342 11.0976 10.3166 11.0976 10.7071 10.7071C11.0976 10.3166 11.0976 9.68342 10.7071 9.29289L9.41421 8L10.7071 6.70711C11.0976 6.31658 11.0976 5.68342 10.7071 5.29289C10.3166 4.90237 9.68342 4.90237 9.29289 5.29289L8 6.58579L6.70711 5.29289Z"
+                                    fill="#A70532" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Не верно! Правильный ответ:
+                            </div>
+                            <div class="test__result-text">
+                                <ul>
+                                    <li>Содержат одинаковую концентрацию тиамидола в составе</li>
+                                    <li>Не наносить более 4-х раз в день и на кожу вокруг глаз</li>
+                                    <li>Видимый эффект от применения уже через 2 недели</li>
+                                    <li>Эффективны против всех видов меланиновой гиперпигментации</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test__answer-buttons">
+                    <div class="wrapper">
+                        <div class="button button-show-result disabled">
+                            Подтвердить ответ
+                        </div>
+                        <div class="button next-question hidden">
+                            Следующий вопрос
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__container">
+                <!-- .quest-wrong .quest-correct -->
+                <div class="test__block">
+                    <div class="wrapper">
+                        <div class="test__dialog">
+                            10. Какой компонент помимо тиамидола входит в состав всех средств Anti-Pigment?
+                        </div>
+                        <div class="test__answers">
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest10" value="Эноксолон">
+                                <span class="answer">Эноксолон</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest10" value="Гиалуроновая кислота">
+                                <span class="answer">Гиалуроновая кислота</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest10" value="Ликохалкон А" data-corect="true">
+                                <span class="answer">Ликохалкон А</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest10" value="Пантенол">
+                                <span class="answer">Пантенол</span>
+                            </label>
+                        </div>
+                        <div class="test__result-yes hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
+                                    fill="#89BBE5" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Верно!
+                            </div>
+                        </div>
+                        <div class="test__result-no hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L6.58579 8L5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071C5.68342 11.0976 6.31658 11.0976 6.70711 10.7071L8 9.41421L9.29289 10.7071C9.68342 11.0976 10.3166 11.0976 10.7071 10.7071C11.0976 10.3166 11.0976 9.68342 10.7071 9.29289L9.41421 8L10.7071 6.70711C11.0976 6.31658 11.0976 5.68342 10.7071 5.29289C10.3166 4.90237 9.68342 4.90237 9.29289 5.29289L8 6.58579L6.70711 5.29289Z"
+                                    fill="#A70532" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Не верно! Правильный ответ:
+                            </div>
+                            <div class="test__result-text">
+                                <ul>
+                                    <li>Ликохалкон А</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test__answer-buttons">
+                    <div class="wrapper">
+                        <div class="button button-show-result disabled">
+                            Подтвердить ответ
+                        </div>
+                        <a href="/" class="button next-question hidden">
+
+                            Завершить
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+
+        <script src="static/js/test.min.js"></script>
+    </body>
+
+</html>
+
+
+
