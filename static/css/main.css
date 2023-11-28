@@ -635,18 +635,10 @@ h6 {
   font-weight: normal;
 }
 @media only screen and (min-width: 1201px) {
-  .form__select .nice-select.open:after {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
   .form__select .nice-select .nice-select-dropdown {
     width: 230px;
     left: calc(100% - 50px);
     top: calc(100% + 6px);
-    -webkit-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0);
-    opacity: 1;
-    pointer-events: auto;
   }
 }
 
@@ -679,6 +671,9 @@ h6 {
 .checkbox:checked ~ .checkbox__icon::before {
   left: 22px;
 }
+.checkbox:checked ~ .checkbox__icon {
+  background: #A70532;
+}
 .checkbox__text {
   color: #6B7280;
   font-size: 14px;
@@ -689,6 +684,10 @@ h6 {
 .checkbox__text a {
   color: inherit;
   text-decoration: underline;
+}
+
+.modal .checkbox:checked ~ .checkbox__icon {
+  background: #da7808;
 }
 
 .button {

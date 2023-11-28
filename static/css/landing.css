@@ -659,6 +659,7 @@
 .modal__form {
   padding-right: 10px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .modal__form::-webkit-scrollbar {
   width: 5px;
