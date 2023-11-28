@@ -230,7 +230,10 @@
 }
 
 .wrapper {
-  width: 1274px;
+  width: 1314px;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 body {
@@ -238,4 +241,85 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 860px) {
+  .welcom__tabs {
+    position: static;
+    width: auto;
+  }
+  .welcom__controller {
+    background: transparent !important;
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
+    padding: 32px 28px;
+  }
+  .welcom__controller .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .welcom__button {
+    font-size: 17px;
+    padding: 12px 40px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .welcom__name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .welcom__title {
+    font-size: 32px;
+  }
+  .welcom__num {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .welcom__text {
+    font-size: 24px;
+  }
+  .welcom__icon {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 20px;
+  }
+  .welcom__icon svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .welcom__main {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .welcom__controller {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .welcom__tabs span {
+    width: 9px;
+    height: 9px;
+  }
+  .welcom__title, .welcom__text {
+    width: 100%;
+  }
+  .welcom__num svg {
+    max-width: 110px;
+  }
 }

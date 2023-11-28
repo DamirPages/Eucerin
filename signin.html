@@ -62,25 +62,25 @@
                         <img src="static/img/content/logo.svg" alt="">
                     </div>
                 </div>
-                <div class="signin__container">
+                <form class="signin__container">
                     <div class="title">
                         Регистрация
                     </div>
                     <div class="signin__form">
                         <div class="modal__input">
-                            <input type="text" class="input" placeholder="Фамилия">
+                            <input type="text" class="input" name="surname" placeholder="Фамилия">
                         </div>
                         <div class="modal__input">
-                            <input type="text" class="input" placeholder="Имя">
+                            <input type="text" class="input" name="name" placeholder="Имя">
                         </div>
                         <div class="modal__input">
-                            <input type="text" class="input" placeholder="Отчество">
+                            <input type="text" class="input" name="lastname" placeholder="Отчество">
                         </div>
                         <div class="modal__input">
-                            <input type="text" class="input tel" placeholder="+7 (777) 777 7777">
+                            <input type="text" class="input tel" name="tel" placeholder="+7 (777) 777 7777">
                         </div>
                         <div class="modal__input">
-                            <input type="text" class="input" placeholder="E-mail">
+                            <input type="text" class="input" name="email" placeholder="E-mail">
                         </div>
 
                         <div class="radio__group">
@@ -98,7 +98,7 @@
 
 
                         <div class="modal__select">
-                            <select name="" id="" class="select">
+                            <select name="" id="" name="city" class="select">
                                 <option value="" disabled selected>Выбрать город</option>
                                 <option value="">1</option>
                                 <option value="">2</option>
@@ -107,7 +107,7 @@
                             </select>
                         </div>
                         <div class="modal__select">
-                            <select name="" id="" class="select">
+                            <select name="" id="" name="clinic" class="select">
                                 <option value="" disabled selected>Выбрать клинику/аптечную сеть</option>
                                 <option value="">1</option>
                                 <option value="">2</option>
@@ -117,29 +117,29 @@
                         </div>
 
                         <div class="modal__input">
-                            <input type="text" class="input" placeholder="Адрес клиники/аптеки">
+                            <input type="text" name="address" class="input" placeholder="Адрес клиники/аптеки">
                         </div>
 
                         <div class="modal__input">
-                            <input type="text" class="input" placeholder="Должность">
+                            <input type="text" name="position" class="input" placeholder="Должность">
                         </div>
                     </div>
                     <label class="modal__checkbox">
-                        <input type="checkbox" class="checkbox">
+                        <input type="checkbox" name="politic" class="checkbox">
                         <div class="checkbox__icon"></div>
                         <div class="checkbox__text">
-                            Настоящим подтверждаю, что я ознакомлен с <a href="">Политикой конфиденциальности</a> и согласен на обработку персональных данных.
+                            Настоящим подтверждаю, что я ознакомлен с <a href="#" data-open-modal=".modal-politic">Политикой конфиденциальности</a> и согласен на обработку персональных данных.
                         </div>
                     </label>
                     <label class="modal__checkbox">
-                        <input type="checkbox" class="checkbox">
+                        <input type="checkbox" name="send" class="checkbox">
                         <div class="checkbox__icon"></div>
                         <div class="checkbox__text">
                             Я даю согласие на получение рассылки о предложениях, информации о продуктах/услугах и иной рекламной информации.
                         </div>
                     </label>
-                    <div class="button button-round">Зарегистрироваться</div>
-                </div>
+                    <button class="button button-round">Зарегистрироваться</button>
+                </form>
                 <footer class="footer">
                     <div class="footer__text">
                         ООО «Байерсдорф» ИНН: 7702226629 ОГРН: 1027739225689
@@ -151,13 +151,15 @@
                         <div class="tel__text">
                             Горячая линия
                         </div>
-                        <div class="tel__link">
+                        <a href="tel:+79647197274" class="tel__link">
+
                             +7 (964) 719-72-74
-                        </div>
+
+                        </a>
                     </div>
                     <div class="footer__links">
-                        <div class="footer__link">Техподдержка</div>
-                        <div class="footer__link">Политика конфиденциальности</div>
+                        <a href="./support.html" class="footer__link">Техподдержка</a>
+                        <a href="#" data-open-modal=".modal-politic" class="footer__link">Политика конфиденциальности</a>
                     </div>
                 </footer>
             </div>
@@ -172,10 +174,46 @@
                     <div class="signin__modal-title">Авторизуйтесь</div>
                     <div class="signin__modal-text">На Ваш e-mail был отправлен код авторизации</div>
                 </div>
-                <div class="signin__modal-button">
+                <div class="signin__modal-button" data-close-modal=".signin__modal">
                     OK
                 </div>
             </div>
+        </div>
+
+        <div class="modal modal-politic">
+            <div class="modal__container">
+                <div class="modal__close" data-close-modal=".modal-politic">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M24.1598 3.84003C24.7121 3.84003 25.1598 4.28774 25.1598 4.84003C25.1598 5.21201 24.9567 5.53655 24.6554 5.70881C24.6437 5.71853 24.6297 5.73035 24.6133 5.74448C24.5182 5.82617 24.3753 5.956 24.1837 6.13565C23.8031 6.49233 23.2636 7.0141 22.5987 7.6668C21.2705 8.97058 19.4602 10.7784 17.4597 12.7901C16.9527 13.3 16.4337 13.8228 15.9074 14.3536C19.1315 17.6118 22.4673 21.0042 24.8741 23.4601C25.2606 23.8545 25.2542 24.4877 24.8598 24.8742C24.4653 25.2608 23.8322 25.2544 23.4456 24.86C21.0437 22.409 17.7165 19.0253 14.4998 15.7746C11.2832 19.0253 7.95595 22.409 5.55406 24.86C5.1675 25.2544 4.53436 25.2608 4.13992 24.8742C3.74547 24.4877 3.73907 23.8545 4.12563 23.4601C6.5324 21.0042 9.8682 17.6118 13.0923 14.3536C12.566 13.8228 12.047 13.3 11.54 12.7901C9.53947 10.7784 7.72924 8.97058 6.40099 7.6668C5.73604 7.0141 5.19656 6.49233 4.81603 6.13565C4.62436 5.956 4.48144 5.82617 4.38643 5.74448C4.37 5.73035 4.35602 5.71853 4.3443 5.70881C4.04294 5.53655 3.83984 5.21201 3.83984 4.84003C3.83984 4.28774 4.28756 3.84003 4.83984 3.84003C5.03086 3.84003 5.17361 3.8951 5.21985 3.91354C5.28347 3.93892 5.33303 3.96593 5.36184 3.9825C5.42018 4.01605 5.46865 4.05064 5.49836 4.07257C5.56155 4.1192 5.62839 4.17469 5.69041 4.22802C5.81847 4.33814 5.98626 4.49132 6.18376 4.67643C6.58156 5.04929 7.13426 5.58407 7.80199 6.2395C9.1391 7.55198 10.9562 9.36668 12.9582 11.3799C13.4618 11.8863 13.9772 12.4055 14.4998 12.9326C15.0225 12.4055 15.5379 11.8863 16.0415 11.3799C18.0435 9.36668 19.8606 7.55198 21.1977 6.2395C21.8654 5.58407 22.4181 5.04929 22.8159 4.67643C23.0134 4.49132 23.1812 4.33814 23.3093 4.22802C23.3713 4.17469 23.4381 4.1192 23.5013 4.07257C23.531 4.05064 23.5795 4.01605 23.6378 3.9825C23.6667 3.96593 23.7162 3.93892 23.7798 3.91354C23.8261 3.8951 23.9688 3.84003 24.1598 3.84003Z"
+                        fill="#F7921E" />
+                    </svg>
+                </div>
+                <div class="modal__title">
+                    Правила проведения и Условия участия в Программе «Заботимся о питомцах вместе» (далее – Правила)
+                </div>
+
+                <div class="modal__content">
+                    <p>
+                        Стимулирующая промоакция <b>«Заботимся о питомцах вместе»</b> (далее – «Программа») проводится с целью повышения узнаваемости брендов <b>«Адвантикс», «Мильбемакс», «Форесто»</b>, повышения лояльности к ним, а также стимулирования
+                        продаж в розничных торговых точках препаратов для животных. Принимая участие в Программе, Участники полностью соглашаются с настоящими правилами (далее – «Правила»).
+                    </p>
+                    <p>
+                        Программа не преследует цели получения прибыли либо иного дохода. Программа носит исключительно рекламный характер и не требует внесения платы за участие. Программа не является лотереей или иной основанной на риске игрой и проводится в соответствии с
+                        настоящими Правилами и действующим законодательством РФ. Программа не содержит элементы риска, определение победителей осуществляется в соответствии с настоящими Правилами. Требования Федерального закона РФ № 138-ФЗ от 11.11.2003г.
+                        «О лотереях» на данную Акцию не распространяются. Призовой фонд формируется за счет средств Организатора Программы.
+                    </p>
+                    <h2>Термины и определения.</h2>
+                    <p>
+                        <b>Участник Программы (Участник)</b> – дееспособное физическое лицо, достигшее 18 лет, постоянно проживающее на территории РФ, а также являющееся консультантом и/или продавцом ветеринарных препаратов в специализированных торговых
+                        точках товаров для животных, при условии соблюдения положений настоящих Правил.
+                    </p>
+                    <p>
+                        <b>Товары-участники Программы</b> – перечень товаров, участвующих в Программе, указанный в п. 4.5. Правил.
+                    </p>
+                </div>
+
+            </div>
+            <div class="modal__bg"></div>
         </div>
 
         <script src="static/js/signin.min.js"></script>

@@ -8,6 +8,7 @@ body {
 }
 
 .wrapper {
+  max-width: 100%;
   width: 390px;
   margin: 0 auto;
   padding: 8px 20px;
@@ -158,6 +159,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.test__answers.disabled {
+  pointer-events: none;
+}
 
 .test__answer {
   display: block;
@@ -179,7 +183,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
-  text-transform: capitalize;
   position: relative;
   cursor: pointer;
 }
@@ -253,7 +256,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 142.857% */
-  text-transform: capitalize;
 }
 
 .test__result-no {

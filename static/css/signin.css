@@ -64,6 +64,7 @@
   margin-bottom: 20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  display: block;
   cursor: pointer;
 }
 .button-round:hover {
@@ -83,6 +84,7 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
+  display: block;
 }
 .button-round-border:hover {
   background: #223341;
@@ -99,7 +101,8 @@
 }
 
 .wrapper {
-  width: 1274px;
+  width: 1314px;
+  max-width: 100%;
 }
 
 body {
@@ -460,6 +463,23 @@ body {
   font-weight: 400;
   line-height: 150%;
 }
+.input__title a {
+  color: #223341;
+  font-weight: bold;
+}
+
+.main.support .signin__container.login .modal__input {
+  margin-bottom: 10px;
+}
+.main.support .input__title {
+  margin-bottom: 30px;
+}
+.main.support .signin__container.login .button-round {
+  margin-top: 0;
+}
+.main.support .title {
+  margin-bottom: 30px;
+}
 
 .modal {
   position: fixed;
@@ -652,4 +672,177 @@ body {
 }
 .modal__form::-webkit-scrollbar-thumb {
   background: #F7921E;
+}
+
+@media only screen and (max-width: 860px) {
+  .modal.modal-politic .modal__container .modal__title {
+    width: 100%;
+  }
+  .modal.modal-politic .modal__container .modal__title {
+    font-size: 16px;
+  }
+  .modal__content {
+    font-size: 14px;
+  }
+  .modal.modal-politic .modal__container, .modal__container {
+    padding: 45px 16px;
+  }
+  .modal__form {
+    padding-right: 0;
+  }
+  .modal__content::-webkit-scrollbar {
+    width: 9px;
+  }
+  .modal {
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 1359px) {
+  .header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .signin__form > * {
+    width: 408px;
+    max-width: 100%;
+  }
+  .main__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .signin__form {
+    height: auto;
+  }
+  .title {
+    text-align: center;
+  }
+  .signin__form {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  input.tel {
+    margin-bottom: 0;
+  }
+  .signin__container {
+    max-width: 100%;
+  }
+  .signin .modal__checkbox {
+    width: 408px;
+    margin: 0 auto 13px auto;
+    max-width: 100%;
+  }
+  .signin .button-round {
+    margin: 40px auto 20px auto;
+    width: 408px;
+    max-width: 100%;
+  }
+  .footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer .tel {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .tel__text {
+    font-size: 12px;
+  }
+  .tel__link {
+    font-size: 16px;
+  }
+  .tel {
+    margin-bottom: 19px;
+  }
+  .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 352px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__link:not(:last-child) {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .footer__link {
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .footer__text {
+    font-size: 8px;
+  }
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+  .header .logo {
+    width: 165px;
+  }
+  .main__info {
+    margin-bottom: 85px;
+  }
+  .main__title {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+  .main__text {
+    font-size: 20px;
+    text-align: center;
+  }
+  .button-round, .button-round-border {
+    font-size: 16px;
+    padding: 14px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .main {
+    padding: 50px 20px 20px 20px;
+  }
+  .input, .radio__text, .signin .select, .signin .nice-select, .signin .nice-select.open, .signin .nice-select:focus {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .button-round, .main__buttons {
+    width: 100%;
+  }
+  .footer__link {
+    font-size: 12px;
+  }
 }

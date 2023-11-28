@@ -50,55 +50,48 @@
             (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
         </script>
 
-        <link href="static/css/start.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/signin.min.css" rel="stylesheet" type="text/css">
     </head>
 
     <body class="page">
-        <div class="welcom">
-            <header class="header">
-                <div class="wrapper">
-                    <a href="#" class="logo">
-                        <img src="static/img/content/logo.svg" alt="">
-                    </a>
-                    <a href="#" class="logout">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                            <path d="M15.75 9.5V5.75C15.75 4.50736 14.7426 3.5 13.5 3.5L7.5 3.5C6.25736 3.5 5.25 4.50736 5.25 5.75L5.25 19.25C5.25 20.4926 6.25736 21.5 7.5 21.5H13.5C14.7426 21.5 15.75 20.4926 15.75 19.25V15.5M18.75 15.5L21.75 12.5M21.75 12.5L18.75 9.5M21.75 12.5L9 12.5"
-                            stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </div>
-            </header>
-            <div class="welcom__container">
-                <div class="welcom__main">
-                    <div class="wrapper">
-                        <div class="logo">
-                            <img src="static/img/content/logo.svg" alt="">
+
+        <div class="main signin support">
+            <div class="wrapper">
+                <div class="signin__container login">
+                    <div class="title">
+                        Служба поддержки
+                    </div>
+                    <div class="signin__form">
+                        <div class="modal__input">
+                            <div class="input__title">
+                                Вопросы по Программе Вы можете задать по электронной почте <a href="mailto:vopros@eucerin-profi.ru">vopros@eucerin-profi.ru</a>, по телефону <a href="tel:+79647197274">+7 (964) 719-72-74</a> (с 10:00 до 18:00 по моск. времени)
+                                или заполнив форму:
+                            </div>
+                            <select name="" id="" name="theme" class="select">
+                                <option value="" selected disabled>Тема сообщения</option>
+                                <option value="">Регистрация в программе</option>
+                                <option value="">Технические вопросы</option>
+                                <option value="">Запись на тренинг</option>
+                                <option value="">Образцы для тестирования</option>
+                            </select>
                         </div>
-                        <div class="start__info">
-                            <div class="start__title">
-                                Поздравляем, Вы стали участником программы!
-                            </div>
-                            <div class="start__text">
-                                Вам начислено <b>100</b> приветственных баллов
-                            </div>
+                        <div class="modal__input">
+                            <input type="text" class="input" name="email" placeholder="E-mail">
+                        </div>
+                        <div class="modal__textarea">
+                            <textarea name="" id="" cols="30" rows="10" class="textarea" name="text" placeholder="Текст сообщения"></textarea>
                         </div>
                     </div>
-                </div>
-                <div class="welcom__controller">
-                    <div class="wrapper">
-                        <a href="#" class="learn__button">
 
-                            Перейти к обучению
-
-                        </a>
-                    </div>
+                    <div class="button button-round">Отправить сообщение</div>
                 </div>
-                <div class="start__bg">
-                    <img src="static/img/content/start-bg.png" alt="">
-                </div>
+            </div>
+            <div class="main__bg">
+                <img src="static/img/content/main-bg.jpg" alt="">
             </div>
         </div>
 
+        <script src="static/js/signin.min.js"></script>
     </body>
 
 </html>

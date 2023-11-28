@@ -8,6 +8,7 @@ body {
 }
 
 .wrapper {
+  max-width: 100%;
   width: 390px;
   margin: 0 auto;
   padding: 8px 20px;
@@ -226,9 +227,12 @@ body {
 }
 
 .result__img {
-  margin-top: -150px;
+  margin-top: -42%;
   z-index: -1;
   position: relative;
+}
+.result__img img {
+  width: 100%;
 }
 
 .result__img-text {

@@ -67,10 +67,10 @@
                             <a href="#" class="nav__link">Правила программы</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Условия</a>
+                            <a href="#block1" class="nav__link">Условия</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Образная связь</a>
+                            <a href="#block2" class="nav__link">Образная связь</a>
                         </li>
                     </ul>
                 </nav>
@@ -81,7 +81,7 @@
                         Войти
 
                     </a>
-                    <a href="#" class="button button-default">
+                    <a href="#" data-open-modal=".modal-reg" class="button button-default">
 
                         Зарегистрироваться
 
@@ -99,13 +99,13 @@
                 <div class="banner__text">
                     Программа онлайн обучения для фармацевтов
                 </div>
-                <a href="#" class="button button-default">Зарегистрироваться</a>
+                <a href="#" data-open-modal=".modal-reg" class="button button-default">Зарегистрироваться</a>
                 <div class="banner__img">
                     <img src="static/img/content/banner.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="conditions">
+        <div class="conditions" id="block1">
             <div class="wrapper">
                 <div class="title">
                     Условия программы
@@ -223,7 +223,7 @@
                             </div>
                             <div class="products__text">
                                 Воздействие солнечных лучей, гормональные изменения, воспаление кожи и шрамы от угрей могут стать причиной гиперпигментации. Клинически доказано, что серия средств Eucerin Anti-Pigment уменьшает проявления темных пятен и придает коже заметный более светлый
-                                тон за 12 недель при регулярном использовании.
+                                тон за 12 недель при регулярном использовании. регулярном использовании. регулярном использовании. регулярном использовании.
                             </div>
                             <div class="products__more-text">
                                 Читать больше...
@@ -240,7 +240,7 @@
                             </div>
                             <div class="products__text">
                                 Линейка включает в себя мягкие, но эффективные очищающие средства и широкий выбор продуктов по уходу, специально разработанных для склонной к акне кожи, многие из которых подходят для использования наряду со средствами для лечения акне. Клинические и
-                                дерматологические исследования доказыва...
+                                дерматологические исследования доказыва... акне. Клинические и дерматологические исследования доказыва... акне. Клинические и дерматологические исследования доказыва...
                             </div>
                             <div class="products__more-text">
                                 Читать больше...
@@ -257,7 +257,7 @@
                             </div>
                             <div class="products__text">
                                 Инновационный продукт с двойной эффективностью: корректирует морщины и несовершенства при акне. Для всех типов кожи. Увлажняет, обновляет, выравнивает тон и рельеф кожи, разглаживает морщины, уменьшает несовершенства (комедоны, расширенные поры, постакне).
-                                Двойная эффективность для любого типа кожи.
+                                Двойная эффективность для любого типа кожи. для любого типа кожи. для любого типа кожи.
                             </div>
                             <div class="products__more-text">
                                 Читать больше...
@@ -267,7 +267,7 @@
                 </div>
             </div>
         </div>
-        <div class="form">
+        <div class="form" id="block2">
             <div class="wrapper">
                 <div class="form__container">
                     <div class="title">
@@ -283,16 +283,16 @@
                         </select>
                     </div>
                     <div class="form__input">
-                        <input type="text" placeholder="E-mail" class="input">
+                        <input type="text" placeholder="E-mail" name="email" class="input">
                     </div>
                     <div class="form__textarea">
                         <textarea name="" id="" cols="30" rows="10" placeholder="Текст сообщения" class="textarea"></textarea>
                     </div>
                     <label class="form__checkbox">
-                        <input type="checkbox" class="checkbox">
+                        <input type="checkbox" name="politic" class="checkbox">
                         <div class="checkbox__icon"></div>
                         <div class="checkbox__text">
-                            Выбирая это, вы соглашаетесь с <a href="">Политикой конфиденциальности</a> и использования файлов <a href="">cookie</a>.
+                            Выбирая это, вы соглашаетесь с <a href="#" data-open-modal=".modal-politic">Политикой конфиденциальности</a> и использования файлов <a href="">cookie</a>.
                         </div>
                     </label>
                     <div class="button button-green">
@@ -343,7 +343,7 @@
                                 <a href="#" class="copyright__link">Файлы cookie</a>
                             </li>
                             <li>
-                                <a href="#" class="copyright__link">Политика конфиденциальности</a>
+                                <a href="#" data-open-modal=".modal-politic" class="copyright__link">Политика конфиденциальности</a>
                             </li>
                         </ul>
                     </nav>
@@ -352,7 +352,7 @@
         </footer>
         <div class="modal modal-reg">
             <div class="modal__container">
-                <div class="modal__close">
+                <div class="modal__close" data-close-modal=".modal-reg">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M24.1598 3.84003C24.7121 3.84003 25.1598 4.28774 25.1598 4.84003C25.1598 5.21201 24.9567 5.53655 24.6554 5.70881C24.6437 5.71853 24.6297 5.73035 24.6133 5.74448C24.5182 5.82617 24.3753 5.956 24.1837 6.13565C23.8031 6.49233 23.2636 7.0141 22.5987 7.6668C21.2705 8.97058 19.4602 10.7784 17.4597 12.7901C16.9527 13.3 16.4337 13.8228 15.9074 14.3536C19.1315 17.6118 22.4673 21.0042 24.8741 23.4601C25.2606 23.8545 25.2542 24.4877 24.8598 24.8742C24.4653 25.2608 23.8322 25.2544 23.4456 24.86C21.0437 22.409 17.7165 19.0253 14.4998 15.7746C11.2832 19.0253 7.95595 22.409 5.55406 24.86C5.1675 25.2544 4.53436 25.2608 4.13992 24.8742C3.74547 24.4877 3.73907 23.8545 4.12563 23.4601C6.5324 21.0042 9.8682 17.6118 13.0923 14.3536C12.566 13.8228 12.047 13.3 11.54 12.7901C9.53947 10.7784 7.72924 8.97058 6.40099 7.6668C5.73604 7.0141 5.19656 6.49233 4.81603 6.13565C4.62436 5.956 4.48144 5.82617 4.38643 5.74448C4.37 5.73035 4.35602 5.71853 4.3443 5.70881C4.04294 5.53655 3.83984 5.21201 3.83984 4.84003C3.83984 4.28774 4.28756 3.84003 4.83984 3.84003C5.03086 3.84003 5.17361 3.8951 5.21985 3.91354C5.28347 3.93892 5.33303 3.96593 5.36184 3.9825C5.42018 4.01605 5.46865 4.05064 5.49836 4.07257C5.56155 4.1192 5.62839 4.17469 5.69041 4.22802C5.81847 4.33814 5.98626 4.49132 6.18376 4.67643C6.58156 5.04929 7.13426 5.58407 7.80199 6.2395C9.1391 7.55198 10.9562 9.36668 12.9582 11.3799C13.4618 11.8863 13.9772 12.4055 14.4998 12.9326C15.0225 12.4055 15.5379 11.8863 16.0415 11.3799C18.0435 9.36668 19.8606 7.55198 21.1977 6.2395C21.8654 5.58407 22.4181 5.04929 22.8159 4.67643C23.0134 4.49132 23.1812 4.33814 23.3093 4.22802C23.3713 4.17469 23.4381 4.1192 23.5013 4.07257C23.531 4.05064 23.5795 4.01605 23.6378 3.9825C23.6667 3.96593 23.7162 3.93892 23.7798 3.91354C23.8261 3.8951 23.9688 3.84003 24.1598 3.84003Z"
                         fill="#F7921E" />
@@ -363,23 +363,23 @@
                 </div>
                 <div class="modal__form">
                     <div class="modal__input">
-                        <input type="text" class="input" placeholder="Фамилия">
+                        <input type="text" class="input" name="surname" placeholder="Фамилия">
                     </div>
                     <div class="modal__input">
-                        <input type="text" class="input" placeholder="Имя">
+                        <input type="text" class="input" name="name" placeholder="Имя">
                     </div>
                     <div class="modal__input">
-                        <input type="text" class="input" placeholder="Отчество">
+                        <input type="text" class="input" name="lastname" placeholder="Отчество">
                     </div>
                     <div class="modal__input">
-                        <input type="text" class="input tel" placeholder="+7 (777) 777 7777">
+                        <input type="text" class="input tel" name="tel" placeholder="+7 (777) 777 7777">
                     </div>
                     <div class="modal__input">
-                        <input type="text" class="input" placeholder="E-mail">
+                        <input type="text" class="input" name="email" placeholder="E-mail">
                     </div>
 
                     <div class="modal__select">
-                        <select name="" id="" class="select">
+                        <select name="" id="" name="city" class="select">
                             <option value="" disabled selected>Выбрать город</option>
                             <option value="">1</option>
                             <option value="">2</option>
@@ -388,7 +388,7 @@
                         </select>
                     </div>
                     <div class="modal__select">
-                        <select name="" id="" class="select">
+                        <select name="" id="" name="company" class="select">
                             <option value="" disabled selected>Выбрать название сети</option>
                             <option value="">1</option>
                             <option value="">2</option>
@@ -398,27 +398,29 @@
                     </div>
 
                     <div class="modal__input">
-                        <input type="text" class="input" placeholder="Должность">
+                        <input type="text" class="input" name="position" placeholder="Должность">
                     </div>
 
                     <label class="modal__checkbox">
-                        <input type="checkbox" class="checkbox">
+                        <input type="checkbox" name="politic" class="checkbox">
                         <div class="checkbox__icon"></div>
                         <div class="checkbox__text">
-                            Настоящим подтверждаю, что я ознакомлен с <a href="">Политикой конфиденциальности</a> и согласен на обработку персональных данных.
+                            Настоящим подтверждаю, что я ознакомлен с <a href="#" data-open-modal=".modal-politic">Политикой конфиденциальности</a> и согласен на обработку персональных данных.
                         </div>
                     </label>
                     <label class="modal__checkbox">
-                        <input type="checkbox" class="checkbox">
+                        <input type="checkbox" name="send" class="checkbox">
                         <div class="checkbox__icon"></div>
                         <div class="checkbox__text">
                             Я даю согласие на получение рассылки о предложениях, информации о продуктах/услугах и иной рекламной информации.
                         </div>
                     </label>
 
-                    <div class="button button-default">
+                    <a href="#" class="button button-default">
+
                         Зарегистрироваться
-                    </div>
+
+                    </a>
                 </div>
 
             </div>
@@ -426,7 +428,7 @@
         </div>
         <div class="modal modal-politic">
             <div class="modal__container">
-                <div class="modal__close">
+                <div class="modal__close" data-close-modal=".modal-politic">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M24.1598 3.84003C24.7121 3.84003 25.1598 4.28774 25.1598 4.84003C25.1598 5.21201 24.9567 5.53655 24.6554 5.70881C24.6437 5.71853 24.6297 5.73035 24.6133 5.74448C24.5182 5.82617 24.3753 5.956 24.1837 6.13565C23.8031 6.49233 23.2636 7.0141 22.5987 7.6668C21.2705 8.97058 19.4602 10.7784 17.4597 12.7901C16.9527 13.3 16.4337 13.8228 15.9074 14.3536C19.1315 17.6118 22.4673 21.0042 24.8741 23.4601C25.2606 23.8545 25.2542 24.4877 24.8598 24.8742C24.4653 25.2608 23.8322 25.2544 23.4456 24.86C21.0437 22.409 17.7165 19.0253 14.4998 15.7746C11.2832 19.0253 7.95595 22.409 5.55406 24.86C5.1675 25.2544 4.53436 25.2608 4.13992 24.8742C3.74547 24.4877 3.73907 23.8545 4.12563 23.4601C6.5324 21.0042 9.8682 17.6118 13.0923 14.3536C12.566 13.8228 12.047 13.3 11.54 12.7901C9.53947 10.7784 7.72924 8.97058 6.40099 7.6668C5.73604 7.0141 5.19656 6.49233 4.81603 6.13565C4.62436 5.956 4.48144 5.82617 4.38643 5.74448C4.37 5.73035 4.35602 5.71853 4.3443 5.70881C4.04294 5.53655 3.83984 5.21201 3.83984 4.84003C3.83984 4.28774 4.28756 3.84003 4.83984 3.84003C5.03086 3.84003 5.17361 3.8951 5.21985 3.91354C5.28347 3.93892 5.33303 3.96593 5.36184 3.9825C5.42018 4.01605 5.46865 4.05064 5.49836 4.07257C5.56155 4.1192 5.62839 4.17469 5.69041 4.22802C5.81847 4.33814 5.98626 4.49132 6.18376 4.67643C6.58156 5.04929 7.13426 5.58407 7.80199 6.2395C9.1391 7.55198 10.9562 9.36668 12.9582 11.3799C13.4618 11.8863 13.9772 12.4055 14.4998 12.9326C15.0225 12.4055 15.5379 11.8863 16.0415 11.3799C18.0435 9.36668 19.8606 7.55198 21.1977 6.2395C21.8654 5.58407 22.4181 5.04929 22.8159 4.67643C23.0134 4.49132 23.1812 4.33814 23.3093 4.22802C23.3713 4.17469 23.4381 4.1192 23.5013 4.07257C23.531 4.05064 23.5795 4.01605 23.6378 3.9825C23.6667 3.96593 23.7162 3.93892 23.7798 3.91354C23.8261 3.8951 23.9688 3.84003 24.1598 3.84003Z"
                         fill="#F7921E" />

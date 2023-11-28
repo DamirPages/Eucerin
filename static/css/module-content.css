@@ -8,6 +8,7 @@ body {
 }
 
 .wrapper {
+  max-width: 100%;
   width: 390px;
   margin: 0 auto;
   padding: 8px 20px;
@@ -278,6 +279,10 @@ body {
 
 .learn__img {
   margin-bottom: 9px;
+  width: 100%;
+}
+.learn__img img {
+  width: 100%;
 }
 
 .learn_boldtext {
@@ -341,6 +346,9 @@ body {
 
 .learn__patent {
   margin-bottom: 30px;
+}
+.learn__patent img {
+  max-width: 100%;
 }
 
 .learn__highlight {
@@ -410,4 +418,10 @@ body {
 }
 .learn__textblock b {
   font-weight: 600;
+}
+
+@media only screen and (max-width: 370px) {
+  .learn__img-title {
+    font-size: 14px;
+  }
 }

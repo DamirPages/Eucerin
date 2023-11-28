@@ -230,7 +230,10 @@
 }
 
 .wrapper {
-  width: 1274px;
+  width: 1314px;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 body {
@@ -341,6 +344,7 @@ body {
 
 .welcom__container .wrapper {
   width: 910px;
+  max-width: 100%;
 }
 
 .learn__button-trs {
@@ -412,6 +416,7 @@ body {
   border: 1.471px solid #D1D5DB;
   width: 432px;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .learnblock__icon {
@@ -487,4 +492,60 @@ body {
 }
 .learnblock__modul:not(:last-child) {
   border-bottom: 1px solid #D1D5DB;
+}
+
+.welcom__main .wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .welcom__controller .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .learn__button, .learn__button-trs {
+    font-size: 16px;
+    height: 52px;
+    padding: 2px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .learn__button:not(:last-child), .learn__button-trs:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .welcom__controller .wrapper > * {
+    width: 100%;
+  }
+  .learnblock__name {
+    font-size: 20px;
+  }
+  .learnblock__modul {
+    padding: 15px 20px;
+  }
+  .learnblock__title, .learnblock__text {
+    font-size: 12px;
+  }
+  .learnblock__icon {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    margin-right: 16px;
+  }
+  .learnblock__modul.current .learnblock__icon, .learnblock__modul.next .learnblock__icon {
+    border-width: 2px;
+  }
+  .welcom__main {
+    border-radius: 0px 0px 20px 20px;
+  }
 }
