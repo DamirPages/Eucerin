@@ -319,9 +319,6 @@ body {
 }
 
 .welcom__container {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20.88%, #E3E2E6), color-stop(60.74%, #F0EEF1));
-  background: -webkit-linear-gradient(top, #E3E2E6 20.88%, #F0EEF1 60.74%);
-  background: linear-gradient(180deg, #E3E2E6 20.88%, #F0EEF1 60.74%);
   position: relative;
   z-index: 1;
 }
@@ -336,10 +333,6 @@ body {
 .start__bg img {
   height: 100%;
   display: block;
-}
-
-.welcom__container {
-  background: #E2E0E5;
 }
 
 .welcom__container .wrapper {
@@ -357,8 +350,8 @@ body {
   line-height: 100%;
   border-radius: 136.975px;
   background: #FFF;
-  -webkit-box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.1);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
@@ -383,19 +376,18 @@ body {
           flex-direction: column;
 }
 .welcom__controller .wrapper > * {
-  width: calc(50% - 20px);
+  width: 100%;
 }
 .welcom__controller .wrapper > *:not(:last-child) {
   margin-bottom: 15px;
 }
 
 .welcom__controller {
-  background: transparent;
+  background: #fff;
 }
 
 .welcom__main {
   background: #fff;
-  border-radius: 0px 0px 40px 40px;
   background: #FFF;
   -webkit-box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.1);
@@ -557,8 +549,5 @@ body {
   }
   .learnblock__modul.current .learnblock__icon, .learnblock__modul.next .learnblock__icon {
     border-width: 2px;
-  }
-  .welcom__main {
-    border-radius: 0px 0px 20px 20px;
   }
 }

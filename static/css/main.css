@@ -634,7 +634,7 @@ h6 {
 .form__select .nice-select .option.focus, .form__select .nice-select .option.selected.focus, .form__select .nice-select .option.selected {
   font-weight: normal;
 }
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1660px) {
   .form__select .nice-select .nice-select-dropdown {
     width: 230px;
     left: calc(100% - 50px);
@@ -700,6 +700,24 @@ body.blur {
 body.blur > *:not(.modal):not(.signin__modal) {
   -webkit-filter: blur(3px);
           filter: blur(3px);
+}
+
+.mobile-page {
+  background: rgba(226, 224, 229, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mobile-page > * {
+  max-width: 390px;
+  width: 100%;
 }
 
 /* Plugins, which is used in current project. */

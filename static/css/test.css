@@ -77,11 +77,13 @@ body {
 
 .test__block {
   background: #fff;
-  border-radius: 0px 0px 20px 20px;
   -webkit-box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.1);
 }
 
+.test__answer-buttons {
+  background: #fff;
+}
 .test__answer-buttons .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,8 +121,8 @@ body {
   padding: 14px 24px;
   border-radius: 100px;
   background: #FFF;
-  -webkit-box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.1);
   color: #A70532;
   font-size: 16px;
   font-style: normal;

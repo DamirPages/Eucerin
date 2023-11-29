@@ -136,6 +136,9 @@ body {
           flex-grow: 1;
 }
 
+.module-buttons {
+  background: #fff;
+}
 .module-buttons .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,7 +151,6 @@ body {
 .module__block {
   position: relative;
   z-index: 1;
-  border-radius: 0 0 20px 20px;
   overflow: hidden;
   background: #fff;
 }
