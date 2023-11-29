@@ -105,10 +105,10 @@
   color: #A70532;
 }
 .banner__img {
-  width: 727px;
+  width: 825px;
   height: 620px;
   position: absolute;
-  left: 0;
+  left: calc((100vw - 1440px - 200px) / 2);
   bottom: 0;
   z-index: -1;
 }
@@ -355,7 +355,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: calc((100vw - 1440px) / 2);
 }
 .form__bg img {
   mix-blend-mode: multiply;
@@ -779,8 +779,9 @@
     text-align: center;
   }
   .banner__img {
-    width: 100%;
-    max-width: 100%;
+    width: 123%;
+    max-width: 123%;
+    left: -100px;
   }
   .banner__img img {
     width: 465px;

@@ -328,10 +328,15 @@ body {
 
 .start__bg {
   position: absolute;
-  right: 0;
+  right: -80px;
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+@media only screen and (min-width: 1314px) {
+  .start__bg {
+    right: calc((100vw - 1314px - 160px) / 2);
+  }
 }
 .start__bg img {
   height: 100%;
