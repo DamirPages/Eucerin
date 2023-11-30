@@ -440,6 +440,7 @@ body {
           flex-direction: column;
   overflow-x: hidden;
   min-height: 100vh;
+  min-height: 100dvh;
   position: relative;
   font-family: "Open Sans", serif;
   -webkit-overflow-scrolling: touch;

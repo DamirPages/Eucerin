@@ -5,6 +5,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .wrapper {
@@ -280,4 +281,5 @@ body {
 .result__footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  padding-bottom: 10px;
 }

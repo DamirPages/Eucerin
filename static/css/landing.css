@@ -48,6 +48,7 @@
 
 .banner {
   min-height: calc(100vh - 116px);
+  min-height: calc(100dvh - 116px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -880,6 +881,7 @@
   }
   .banner {
     min-height: calc(100vh - 80px);
+    min-height: calc(100dvh - 80px);
   }
   body {
     padding-top: 80px;
