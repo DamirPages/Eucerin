@@ -716,6 +716,13 @@ body.blur > *:not(.modal):not(.signin__modal) {
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (min-width: 992px) {
+  .mobile-page {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .mobile-page > * {
   max-width: 390px;
   width: 100%;

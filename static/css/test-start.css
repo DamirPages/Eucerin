@@ -79,6 +79,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 15px 20px;
 }
 
 .button-modules {
@@ -104,10 +105,6 @@ body {
 .button-modules.disabled {
   pointer-events: none;
   opacity: 0.2;
-}
-
-.module {
-  position: relative;
 }
 
 .module, .module__container {
@@ -221,4 +218,18 @@ body {
 .module__text:first-child {
   margin-top: 50px;
   margin-bottom: 0;
+}
+
+.module {
+  position: relative;
+}
+@media only screen and (min-width: 992px) {
+  .module {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    height: 830px;
+    max-height: 100%;
+    overflow-y: auto;
+  }
 }
