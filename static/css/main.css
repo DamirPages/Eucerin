@@ -644,7 +644,12 @@ h6 {
 }
 
 .checkbox {
-  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0.01;
 }
 .checkbox__icon {
   width: 44px;
@@ -726,6 +731,14 @@ body.blur > *:not(.modal):not(.signin__modal) {
 .mobile-page > * {
   max-width: 390px;
   width: 100%;
+}
+
+.nice-select.invalid {
+  border-color: red !important;
+}
+
+.modal__checkbox {
+  position: relative;
 }
 
 /* Plugins, which is used in current project. */

@@ -354,6 +354,13 @@
 }
 .form__container {
   width: 576px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .form__bg {
   position: absolute;
@@ -371,6 +378,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 22px;
+  position: relative;
 }
 .form__textarea, .form__input {
   margin-bottom: 22px;
