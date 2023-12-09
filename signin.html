@@ -68,24 +68,24 @@
                     </div>
                     <div class="signin__form">
                         <div class="modal__input">
-                            <input type="text" class="input" name="surname" placeholder="Фамилия">
+                            <input type="text" class="input" name="surname" placeholder="Фамилия" required>
                         </div>
                         <div class="modal__input">
-                            <input type="text" class="input" name="name" placeholder="Имя">
+                            <input type="text" class="input" name="name" placeholder="Имя" required>
                         </div>
                         <div class="modal__input">
-                            <input type="text" class="input" name="lastname" placeholder="Отчество">
+                            <input type="text" class="input" name="lastname" placeholder="Отчество" required>
                         </div>
                         <div class="modal__input">
-                            <input type="text" class="input tel" name="tel" placeholder="+7 (777) 777 7777">
+                            <input type="text" class="input tel" name="tel" placeholder="+7 (777) 777 7777" required>
                         </div>
                         <div class="modal__input">
-                            <input type="text" class="input" name="email" placeholder="E-mail">
+                            <input type="text" class="input" name="email" placeholder="E-mail" required>
                         </div>
 
                         <div class="radio__group">
                             <label class="radio">
-                                <input type="radio" name="proffision" value="1">
+                                <input type="radio" name="proffision" value="1" checked>
                                 <div class="radio__icon"></div>
                                 <div class="radio__text">Врач</div>
                             </label>
@@ -96,49 +96,52 @@
                             </label>
                         </div>
 
-
+                        <!-- Доступен в переменной window.niceSelect.city -->
+                        <!-- Доступен в переменной window.niceSelect.clinic -->
+                        <!-- Для обновление селекта и его значений window.niceSelect.city.update() -->
+                        <!-- Для обновление селекта и его значений window.niceSelect.clinic.update() -->
                         <div class="modal__select">
-                            <select name="" id="" name="city" class="select">
+                            <select id="city" name="city" class="select" required>
                                 <option value="" disabled selected>Выбрать город</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
                             </select>
                         </div>
                         <div class="modal__select">
-                            <select name="" id="" name="clinic" class="select">
+                            <select id="clinic" name="clinic" class="select" required>
                                 <option value="" disabled selected>Выбрать клинику/аптечную сеть</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
                             </select>
                         </div>
 
                         <div class="modal__input">
-                            <input type="text" name="address" class="input" placeholder="Адрес клиники/аптеки">
+                            <input type="text" name="address" class="input" placeholder="Адрес клиники/аптеки" required>
                         </div>
 
                         <div class="modal__input">
-                            <input type="text" name="position" class="input" placeholder="Должность">
+                            <input type="text" name="position" class="input" placeholder="Должность" required>
                         </div>
                     </div>
                     <label class="modal__checkbox">
-                        <input type="checkbox" name="politic" class="checkbox" checked>
+                        <input type="checkbox" name="politic" class="checkbox" checked required>
                         <div class="checkbox__icon"></div>
                         <div class="checkbox__text">
                             Настоящим подтверждаю, что я ознакомлен с <a href="#" data-open-modal=".modal-politic">Политикой конфиденциальности</a> и согласен на обработку персональных данных.
                         </div>
                     </label>
                     <label class="modal__checkbox">
-                        <input type="checkbox" name="send" class="checkbox" checked>
+                        <input type="checkbox" name="send" class="checkbox" checked required>
                         <div class="checkbox__icon"></div>
                         <div class="checkbox__text">
                             Я даю согласие на получение рассылки о предложениях, информации о продуктах/услугах и иной рекламной информации.
                         </div>
                     </label>
-                    <button class="button button-round">Зарегистрироваться</button>
+                    <button type="submit" class="button button-round">Зарегистрироваться</button>
                 </form>
                 <footer class="footer">
                     <div class="footer__text">

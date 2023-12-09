@@ -57,7 +57,7 @@
 
         <div class="main signin support">
             <div class="wrapper">
-                <div class="signin__container login">
+                <form class="signin__container login">
                     <div class="title">
                         Служба поддержки
                     </div>
@@ -67,24 +67,27 @@
                                 Вопросы по Программе Вы можете задать по электронной почте <a href="mailto:vopros@eucerin-profi.ru">vopros@eucerin-profi.ru</a>, по тел. <a href="tel:+79647197274">+7&nbsp;(964)&nbsp;719&nbsp;-&nbsp;72&nbsp;-&nbsp;74</a> (с
                                 10:00 до 18:00 по моск. времени) или заполнив форму:
                             </div>
-                            <select name="" id="" name="theme" class="select">
+
+                            <!-- Доступен в переменной window.niceSelect.theme -->
+                            <!-- Для обновление селекта и его значений window.niceSelect.theme.update() -->
+                            <select id="theme" name="theme" class="select" required>
                                 <option value="" selected disabled>Тема сообщения</option>
-                                <option value="">Регистрация в программе</option>
-                                <option value="">Технические вопросы</option>
-                                <option value="">Запись на тренинг</option>
-                                <option value="">Образцы для тестирования</option>
+                                <option value="Регистрация в программе">Регистрация в программе</option>
+                                <option value="Технические вопросы">Технические вопросы</option>
+                                <option value="Запись на тренинг">Запись на тренинг</option>
+                                <option value="Образцы для тестирования">Образцы для тестирования</option>
                             </select>
                         </div>
                         <div class="modal__input">
-                            <input type="text" class="input" name="email" placeholder="E-mail">
+                            <input type="text" class="input" name="email" placeholder="E-mail" required>
                         </div>
                         <div class="modal__textarea">
-                            <textarea name="" id="" cols="30" rows="10" class="textarea" name="text" placeholder="Текст сообщения"></textarea>
+                            <textarea id="text" cols="30" rows="10" class="textarea" name="text" placeholder="Текст сообщения" required></textarea>
                         </div>
                     </div>
 
-                    <div class="button button-round">Отправить сообщение</div>
-                </div>
+                    <button type="submit" class="button button-round">Отправить сообщение</button>
+                </form>
             </div>
             <div class="main__bg">
                 <img src="static/img/content/main-bg.jpg" alt="">

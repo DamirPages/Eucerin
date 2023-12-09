@@ -269,36 +269,38 @@
         </div>
         <div class="form" id="block2">
             <div class="wrapper">
-                <div class="form__container">
+                <form class="form__container">
                     <div class="title">
                         Связаться с нами
                     </div>
+                    <!-- Доступен в переменной window.niceSelect.theme -->
+                    <!-- Для обновление селекта и его значений window.niceSelect.theme.update() -->
                     <div class="form__select">
-                        <select name="" id="" class="select">
+                        <select name="theme" id="theme" class="select">
                             <option value="" disabled selected>Тема сообщения</option>
-                            <option value="">Регистрация в программе</option>
-                            <option value="">Технические вопросы</option>
-                            <option value="">Вопросы по правилам</option>
-                            <option value="">Подарки</option>
+                            <option value="Регистрация в программе">Регистрация в программе</option>
+                            <option value="Технические вопросы">Технические вопросы</option>
+                            <option value="Вопросы по правилам">Вопросы по правилам</option>
+                            <option value="Подарки">Подарки</option>
                         </select>
                     </div>
                     <div class="form__input">
-                        <input type="text" placeholder="E-mail" name="email" class="input">
+                        <input type="text" placeholder="E-mail" name="email" class="input" required>
                     </div>
                     <div class="form__textarea">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Текст сообщения" class="textarea"></textarea>
+                        <textarea name="text" id="text" cols="30" rows="10" placeholder="Текст сообщения" class="textarea" required></textarea>
                     </div>
                     <label class="form__checkbox">
-                        <input type="checkbox" name="politic" class="checkbox" checked>
+                        <input type="checkbox" name="politic" class="checkbox" checked required>
                         <div class="checkbox__icon"></div>
                         <div class="checkbox__text">
                             Выбирая это, вы соглашаетесь с <a href="#" data-open-modal=".modal-politic">Политикой конфиденциальности</a> и использования файлов <a href="">cookie</a>.
                         </div>
                     </label>
-                    <div class="button button-green">
+                    <button type="submit" class="button button-green">
                         отправить
-                    </div>
-                </div>
+                    </button>
+                </form>
             </div>
             <div class="form__bg">
                 <img src="static/img/content/form-bg.jpg" alt="">
@@ -361,67 +363,69 @@
                 <div class="modal__title">
                     Регистрация
                 </div>
-                <div class="modal__form">
+                <form class="modal__form">
                     <div class="modal__input">
-                        <input type="text" class="input" name="surname" placeholder="Фамилия">
+                        <input type="text" class="input" name="surname" placeholder="Фамилия" required>
                     </div>
                     <div class="modal__input">
-                        <input type="text" class="input" name="name" placeholder="Имя">
+                        <input type="text" class="input" name="name" placeholder="Имя" required>
                     </div>
                     <div class="modal__input">
-                        <input type="text" class="input" name="lastname" placeholder="Отчество">
+                        <input type="text" class="input" name="lastname" placeholder="Отчество" required>
                     </div>
                     <div class="modal__input">
-                        <input type="text" class="input tel" name="tel" placeholder="+7 (777) 777 7777">
+                        <input type="text" class="input tel" name="tel" placeholder="+7 (777) 777 7777" required>
                     </div>
                     <div class="modal__input">
-                        <input type="text" class="input" name="email" placeholder="E-mail">
+                        <input type="text" class="input" name="email" placeholder="E-mail" required>
                     </div>
 
+                    <!-- Доступен в переменной window.niceSelect.city -->
+                    <!-- Доступен в переменной window.niceSelect.company -->
+                    <!-- Для обновление селекта и его значений window.niceSelect.city.update() -->
+                    <!-- Для обновление селекта и его значений window.niceSelect.company.update() -->
                     <div class="modal__select">
-                        <select name="" id="" name="city" class="select">
+                        <select name="city" id="city" class="select" required>
                             <option value="" disabled selected>Выбрать город</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
                         </select>
                     </div>
                     <div class="modal__select">
-                        <select name="" id="" name="company" class="select">
+                        <select name="company" id="company" class="select" required>
                             <option value="" disabled selected>Выбрать название сети</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
                         </select>
                     </div>
 
                     <div class="modal__input">
-                        <input type="text" class="input" name="position" placeholder="Должность">
+                        <input type="text" class="input" name="position" placeholder="Должность" required>
                     </div>
 
                     <label class="modal__checkbox">
-                        <input type="checkbox" name="politic" class="checkbox" checked>
+                        <input type="checkbox" name="politic" class="checkbox" checked required>
                         <div class="checkbox__icon"></div>
                         <div class="checkbox__text">
                             Настоящим подтверждаю, что я ознакомлен с <a href="#" data-open-modal=".modal-politic">Политикой конфиденциальности</a> и согласен на обработку персональных данных.
                         </div>
                     </label>
                     <label class="modal__checkbox">
-                        <input type="checkbox" name="send" class="checkbox" checked>
+                        <input type="checkbox" name="send" class="checkbox" checked required>
                         <div class="checkbox__icon"></div>
                         <div class="checkbox__text">
                             Я даю согласие на получение рассылки о предложениях, информации о продуктах/услугах и иной рекламной информации.
                         </div>
                     </label>
 
-                    <a href="#" class="button button-default">
-
+                    <button type="submit" class="button button-default">
                         Зарегистрироваться
-
-                    </a>
-                </div>
+                    </button>
+                </form>
 
             </div>
             <div class="modal__bg"></div>
