@@ -1,0 +1,421 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Eucerin</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="HandheldFriendly" content="true">
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
+        <meta property="twitter:description" content="" />
+        <link rel="image_src" href="" />
+
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+
+        <link href="static/css/test.min.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body class="page mobile-page">
+
+        <form class="test">
+            <div class="test__status">
+                <div class="wrapper">
+                    <div class="test__text">
+                        Вопрос <span id="current-test-answer">1</span> из 5
+                    </div>
+                    <div class="test__rounds">
+                        <div class="test__round active"></div>
+                        <div class="test__round"></div>
+                        <div class="test__round"></div>
+                        <div class="test__round"></div>
+                        <div class="test__round"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 0...100% -->
+            <div class="test__container active">
+                <!-- .quest-wrong .quest-correct -->
+                <div class="test__block">
+                    <div class="wrapper">
+                        <div class="test__dialog">
+                            1. Как можно охарактеризовать чувствительную кожу?
+                        </div>
+                        <div class="test__answers">
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest1" value="Более тонкая и нежная" data-corect="true">
+                                <span class="answer">Более тонкая и нежная</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest1" value="Больше подвержена раздражению, покраснению, высыпаниям" data-corect="true">
+                                <span class="answer">Больше подвержена раздражению, покраснению, высыпаниям</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest1" value="Возможны неприятные ощущения: жжение, пощипывание, покалывание" data-corect="true">
+                                <span class="answer">Возможны неприятные ощущения: жжение, пощипывание, покалывание</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest1" value="Устойчива к внешним и внутренним агрессивным факторам">
+                                <span class="answer">Устойчива к внешним и внутренним агрессивным факторам</span>
+                            </label>
+                        </div>
+                        <div class="test__result-yes hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
+                                    fill="#89BBE5" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Верно!
+                            </div>
+                        </div>
+                        <div class="test__result-no hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L6.58579 8L5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071C5.68342 11.0976 6.31658 11.0976 6.70711 10.7071L8 9.41421L9.29289 10.7071C9.68342 11.0976 10.3166 11.0976 10.7071 10.7071C11.0976 10.3166 11.0976 9.68342 10.7071 9.29289L9.41421 8L10.7071 6.70711C11.0976 6.31658 11.0976 5.68342 10.7071 5.29289C10.3166 4.90237 9.68342 4.90237 9.29289 5.29289L8 6.58579L6.70711 5.29289Z"
+                                    fill="#A70532" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Не верно! Правильный ответ:
+                            </div>
+                            <div class="test__result-text">
+                                <ul>
+                                    <li>Более тонкая и нежная</li>
+                                    <li>Больше подвержена раздражению, покраснению, высыпаниям</li>
+                                    <li>Возможны неприятные ощущения: жжение, пощипывание, покалывание</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test__answer-buttons">
+                    <div class="wrapper">
+                        <div class="button button-show-result disabled">
+                            Подтвердить ответ
+                        </div>
+                        <div class="button next-question hidden">
+                            Следующий вопрос
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__container">
+                <!-- .quest-wrong .quest-correct -->
+                <div class="test__block">
+                    <div class="wrapper">
+                        <div class="test__dialog">
+                            2. Какие продукты из ассортимента Eucerin подходят для ухода за гиперчувствительной кожей?
+                        </div>
+                        <div class="test__answers">
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest2" value="Успокаивающий крем UltraSENSITIVE для сухой кожи" data-corect="true">
+                                <span class="answer">Успокаивающий крем UltraSENSITIVE для сухой кожи</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest2" value="Успокаивающий крем UltraSENSITIVE для нормальной и комбинированной кожи" data-corect="true">
+                                <span class="answer">Успокаивающий крем UltraSENSITIVE для нормальной и комбинированной кожи</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest2" value="Успокаивающий крем против покраснений AntiREDNESS" data-corect="true">
+                                <span class="answer">Успокаивающий крем против покраснений AntiREDNESS</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest2" value="Hyaluron-Filler крем для ухода за нормальной и комбинированной кожей">
+                                <span class="answer">Hyaluron-Filler крем для ухода за нормальной и комбинированной кожей</span>
+                            </label>
+                        </div>
+                        <div class="test__result-yes hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
+                                    fill="#89BBE5" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Верно!
+                            </div>
+                        </div>
+                        <div class="test__result-no hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L6.58579 8L5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071C5.68342 11.0976 6.31658 11.0976 6.70711 10.7071L8 9.41421L9.29289 10.7071C9.68342 11.0976 10.3166 11.0976 10.7071 10.7071C11.0976 10.3166 11.0976 9.68342 10.7071 9.29289L9.41421 8L10.7071 6.70711C11.0976 6.31658 11.0976 5.68342 10.7071 5.29289C10.3166 4.90237 9.68342 4.90237 9.29289 5.29289L8 6.58579L6.70711 5.29289Z"
+                                    fill="#A70532" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Не верно! Правильный ответ:
+                            </div>
+                            <div class="test__result-text">
+                                <ul>
+                                    <li>Успокаивающий крем UltraSENSITIVE для сухой кожи</li>
+                                    <li>Успокаивающий крем UltraSENSITIVE для нормальной и комбинированной кожи</li>
+                                    <li>Успокаивающий крем против покраснений AntiREDNESS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test__answer-buttons">
+                    <div class="wrapper">
+                        <div class="button button-show-result disabled">
+                            Подтвердить ответ
+                        </div>
+                        <div class="button next-question hidden">
+                            Следующий вопрос
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__container">
+                <!-- .quest-wrong .quest-correct -->
+                <div class="test__block">
+                    <div class="wrapper">
+                        <div class="test__dialog">
+                            3. Какие продукты из ассортимента Eucerin подходят для ухода за гиперчувствительной кожей?
+                        </div>
+                        <div class="test__answers">
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest3" value="Мгновенно и надолго успокаивает кожу и уменьшает покраснения" data-corect="true">
+                                <span class="answer">Мгновенно и надолго успокаивает кожу и уменьшает покраснения</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest3" value="Уменьшает чувствительность кожи" data-corect="true">
+                                <span class="answer">Уменьшает чувствительность кожи</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest3" value="Подходит для всех типов кожи" data-corect="true">
+                                <span class="answer">Подходит для всех типов кожи</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest3" value="Применяется только 1 раз в день">
+                                <span class="answer">Применяется только 1 раз в день</span>
+                            </label>
+                        </div>
+                        <div class="test__result-yes hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
+                                    fill="#89BBE5" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Верно!
+                            </div>
+                        </div>
+                        <div class="test__result-no hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L6.58579 8L5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071C5.68342 11.0976 6.31658 11.0976 6.70711 10.7071L8 9.41421L9.29289 10.7071C9.68342 11.0976 10.3166 11.0976 10.7071 10.7071C11.0976 10.3166 11.0976 9.68342 10.7071 9.29289L9.41421 8L10.7071 6.70711C11.0976 6.31658 11.0976 5.68342 10.7071 5.29289C10.3166 4.90237 9.68342 4.90237 9.29289 5.29289L8 6.58579L6.70711 5.29289Z"
+                                    fill="#A70532" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Не верно! Правильный ответ:
+                            </div>
+                            <div class="test__result-text">
+                                <ul>
+                                    <li>Мгновенно и надолго успокаивает кожу и уменьшает покраснения</li>
+                                    <li>Уменьшает чувствительность кожи</li>
+                                    <li>Подходит для всех типов кожи</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test__answer-buttons">
+                    <div class="wrapper">
+                        <div class="button button-show-result disabled">
+                            Подтвердить ответ
+                        </div>
+                        <div class="button next-question hidden">
+                            Следующий вопрос
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__container">
+                <!-- .quest-wrong .quest-correct -->
+                <div class="test__block">
+                    <div class="wrapper">
+                        <div class="test__dialog">
+                            4. Как можно описать понятие «минималистичная формула продукта»?
+                        </div>
+                        <div class="test__answers">
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest4" value="Минимальное количество ингредиентов в составе средства" data-corect="true">
+                                <span class="answer">Минимальное количество ингредиентов в составе средства</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest4" value="Продукт не содержит спирта, ароматизаторов, красителей" data-corect="true">
+                                <span class="answer">Продукт не содержит спирта, ароматизаторов, красителей</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest4" value="Эффект от применения продукта будет минимальный">
+                                <span class="answer">Эффект от применения продукта будет минимальный</span>
+                            </label>
+                        </div>
+                        <div class="test__result-yes hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
+                                    fill="#89BBE5" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Верно!
+                            </div>
+                        </div>
+                        <div class="test__result-no hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L6.58579 8L5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071C5.68342 11.0976 6.31658 11.0976 6.70711 10.7071L8 9.41421L9.29289 10.7071C9.68342 11.0976 10.3166 11.0976 10.7071 10.7071C11.0976 10.3166 11.0976 9.68342 10.7071 9.29289L9.41421 8L10.7071 6.70711C11.0976 6.31658 11.0976 5.68342 10.7071 5.29289C10.3166 4.90237 9.68342 4.90237 9.29289 5.29289L8 6.58579L6.70711 5.29289Z"
+                                    fill="#A70532" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Не верно! Правильный ответ:
+                            </div>
+                            <div class="test__result-text">
+                                <ul>
+                                    <li>Минимальное количество ингредиентов в составе средства</li>
+                                    <li>Продукт не содержит спирта, ароматизаторов, красителей</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test__answer-buttons">
+                    <div class="wrapper">
+                        <div class="button button-show-result disabled">
+                            Подтвердить ответ
+                        </div>
+                        <div class="button next-question hidden">
+                            Следующий вопрос
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test__container">
+                <!-- .quest-wrong .quest-correct -->
+                <div class="test__block">
+                    <div class="wrapper">
+                        <div class="test__dialog">
+                            5. Как быстро крем UltraSENSITIVE оказывает успокаивающий эффект?
+                        </div>
+                        <div class="test__answers">
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest5" value="Уже в первые минуты после нанесения на кожу" data-corect="true">
+                                <span class="answer">Уже в первые минуты после нанесения на кожу</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest5" value="Через 10 минут после нанесения на кожу">
+                                <span class="answer">Через 10 минут после нанесения на кожу</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest5" value="Через час после нанесения на кожу">
+                                <span class="answer">Через час после нанесения на кожу</span>
+                            </label>
+                            <label class="test__answer">
+                                <input type="checkbox" name="quest5" value="Нужно пользоваться кремом не менее 2х недель">
+                                <span class="answer">Нужно пользоваться кремом не менее 2х недель</span>
+                            </label>
+                        </div>
+                        <div class="test__result-yes hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z"
+                                    fill="#89BBE5" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Верно!
+                            </div>
+                        </div>
+                        <div class="test__result-no hidden">
+                            <div class="test__result-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM6.70711 5.29289C6.31658 4.90237 5.68342 4.90237 5.29289 5.29289C4.90237 5.68342 4.90237 6.31658 5.29289 6.70711L6.58579 8L5.29289 9.29289C4.90237 9.68342 4.90237 10.3166 5.29289 10.7071C5.68342 11.0976 6.31658 11.0976 6.70711 10.7071L8 9.41421L9.29289 10.7071C9.68342 11.0976 10.3166 11.0976 10.7071 10.7071C11.0976 10.3166 11.0976 9.68342 10.7071 9.29289L9.41421 8L10.7071 6.70711C11.0976 6.31658 11.0976 5.68342 10.7071 5.29289C10.3166 4.90237 9.68342 4.90237 9.29289 5.29289L8 6.58579L6.70711 5.29289Z"
+                                    fill="#A70532" />
+                                </svg>
+                            </div>
+                            <div class="test__result-title">
+                                Не верно! Правильный ответ:
+                            </div>
+                            <div class="test__result-text">
+                                <ul>
+                                    <li>Уже в первые минуты после нанесения на кожу</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test__answer-buttons">
+                    <div class="wrapper">
+                        <div class="button button-show-result disabled">
+                            Подтвердить ответ
+                        </div>
+                        <button type="submit" class="button next-question hidden">
+                            Завершить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+
+        <script src="static/js/test.min.js"></script>
+    </body>
+
+</html>
+
+
+

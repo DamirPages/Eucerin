@@ -50,55 +50,65 @@
             (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
         </script>
 
-        <link href="static/css/landing.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/module-content.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     </head>
 
-    <body class="page">
+    <body class="page mobile-page">
 
-        <a href="./landing.html">Лендинг</a>
-        <a href="./learnstart.html">Стартовая страница</a>
-        <a href="./login.html">Авторизация</a>
-        <a href="./main.html">Главная</a>
-        <a href="./module-preview.html">Начала изучение модуля</a>
-        <a href="./module-content.html">Изучение модуля</a>
-        <a href="./module-result.html">Завершение модуля</a>
-        <a href="./signin.html">Регистрация</a>
-        <a href="./test-pas.html">Тест пройден</a>
-        <a href="./test-start.html">Начала теста</a>
-        <a href="./test-wrong.html">Тест не пройден</a>
-        <a href="./test.html">Тест</a>
-        <a href="./welcom.html">Начальная страница</a>
-        <a href="./support.html">Поддержка</a>---------------
-        <a href="./learnblocks.html">Учебные модули</a>
-        <a href="./winner.html">Розыгрыш</a>
-        <a href="./calendar.html">Записаться на тренинг</a>
-        <a href="./calendar-modal-active.html">Записаться на тренинг(Модалка)</a>
-        <a href="./review.html">Получить баллы за отзыв</a>
-        <a href="./review-modal-active.html">Получить баллы за отзыв(Модалка)</a>
-
-        <a href="./module-preview2.html">Начала изучение модуля 2</a>
-        <a href="./module-content2.html">Изучение модуля 2</a>
-        <a href="./module-result2.html">Завершение модуля 2</a>
-
-        <a href="./module-preview3.html">Начала изучение модуля 3</a>
-        <a href="./module-content3.html">Изучение модуля 3</a>
-        <a href="./module-result3.html">Завершение модуля 3</a>
-
-        <a href="./test-start2.html">Тест начальная страница 2</a>
-        <a href="./test-pas2.html">Тест пройден 2</a>
-        <a href="./test-wrong2.html">Тест не пройден 2</a>
-        <a href="./test2.html">Тест 2</a>
-
-        <a href="./test-start3.html">Тест начальная страница 3</a>
-        <a href="./test-pas3.html">Тест пройден 3</a>
-        <a href="./test-wrong3.html">Тест не пройден 3</a>
-        <a href="./test3.html">Тест 3</a>
+        <div class="module">
+            <div class="module__status">
+                <div class="wrapper">
+                    <div class="status__text">
+                        Модуль 3 из 3
+                    </div>
+                    <div class="status__rounds">
+                        <div class="status__round"></div>
+                        <div class="status__round"></div>
+                        <div class="status__round active"></div>
+                    </div>
+                </div>
+            </div>
 
 
+            <div class="module__container active">
+                <div class="module__block">
+                    <div class="wrapper">
+                        <div class="learn__title">
+                            Обучающее видео
+                        </div>
+                        <div class="learn__text">
+                            <b>Посмотрите видео Eucerin Чувствительная кожа:</b>
+                        </div>
+                        <a data-src="https://www.youtube.com/watch?v=YbJOTdZBX1g" data-fancybox="gallery" class="learn__preview">
+                            <img src="static/img/content/video-preview.png" alt="">
+                        </a>
 
+                    </div>
+                </div>
 
-        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
-        <script src="static/js/landing.min.js"></script>
+                <div class="module-buttons">
+                    <div class="wrapper">
+                        <a href="#" class="button button-modules">
+
+                            Завершить
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <script>
+            Fancybox.bind('[data-fancybox="gallery"]', {});
+        </script>
+        <script src="static/js/modulContent.min.js"></script>
+
     </body>
 
 </html>
+
+
+
