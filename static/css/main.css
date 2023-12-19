@@ -774,6 +774,59 @@ body.blur > *:not(.modal):not(.signin__modal) {
   max-width: 100% !important;
 }
 
+.header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__info > * {
+  margin-left: 9px;
+}
+
+.profile {
+  width: 24px;
+  height: 24px;
+}
+.profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.coins {
+  padding: 3px 10px;
+  background: #EAEAEC;
+  border-radius: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #A70532;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.coins b {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 150%;
+  margin-right: 4px;
+}
+.coins svg {
+  margin-right: 4px;
+  width: 9px;
+  height: 9px;
+}
+
 /* Plugins, which is used in current project. */
 .nice-select {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
