@@ -737,7 +737,7 @@ body.blur > *:not(.modal):not(.signin__modal) {
 }
 
 .mobile-page {
-  background: rgba(226, 224, 229, 0.7);
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
