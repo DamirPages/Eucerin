@@ -171,18 +171,32 @@
   -webkit-transform: scale(1);
           transform: scale(1);
 }
+.winner__slide.active .animate-scale {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+.winner__slide.active .animate-translate {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+.winner__slide.active .animate-opacity {
+  opacity: 1;
+}
 .winner__text {
   position: absolute;
   top: calc(100% + 1.091vw);
   right: -0.8vw;
   color: #1F1A1B;
-  text-align: center;
+  text-align: right;
   font-size: 1.355vw;
   font-style: normal;
   font-weight: 600;
   line-height: 1.697vw;
   text-transform: uppercase;
   text-wrap: nowrap;
+  width: 60vw;
 }
 .winner__img {
   position: absolute;
@@ -209,6 +223,21 @@
 .winner__img img.animate {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
+}
+.winner__img img.animate-scale {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.winner__img img.animate-translate {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+.winner__img img.animate-opacity {
+  opacity: 0;
+  -webkit-transition: 1.4s;
+  transition: 1.4s;
 }
 .winner__head {
   display: -webkit-box;
