@@ -74,6 +74,7 @@ const moduleBlocks = document.querySelectorAll('.learnblock__group');
 moduleBlocks.forEach(item => {
     const button = item.querySelector('.learn-button');
     const container = item.querySelector('.learnblock__group-moduls');
+    slideUp(container, 0);
     button.addEventListener('click', () => {
         item.classList.toggle('list-visible');
         slideToggle(container);
