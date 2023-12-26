@@ -15,7 +15,7 @@
 
 
         <!--[if (gt IE 9)|!(IE)]><!-->
-        <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
+        <link href="/static/css/main.min.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
 
         <meta property="og:title" content="" />
@@ -50,7 +50,8 @@
             (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
         </script>
 
-        <link href="static/css/test.min.css" rel="stylesheet" type="text/css">
+        <link href="/static/css/test.min.css" rel="stylesheet" type="text/css">
+        <link href="/static/css/result.min.css" rel="stylesheet" type="text/css">
     </head>
 
     <body class="page mobile-page">
@@ -351,19 +352,19 @@
                         </div>
                         <div class="test__answers">
                             <label class="test__answer">
-                                <input type="checkbox" name="quest5" value="Уже в первые минуты после нанесения на кожу" data-corect="true">
+                                <input type="radio" name="quest5" value="Уже в первые минуты после нанесения на кожу" data-corect="true">
                                 <span class="answer">Уже в первые минуты после нанесения на кожу</span>
                             </label>
                             <label class="test__answer">
-                                <input type="checkbox" name="quest5" value="Через 10 минут после нанесения на кожу">
+                                <input type="radio" name="quest5" value="Через 10 минут после нанесения на кожу">
                                 <span class="answer">Через 10 минут после нанесения на кожу</span>
                             </label>
                             <label class="test__answer">
-                                <input type="checkbox" name="quest5" value="Через час после нанесения на кожу">
+                                <input type="radio" name="quest5" value="Через час после нанесения на кожу">
                                 <span class="answer">Через час после нанесения на кожу</span>
                             </label>
                             <label class="test__answer">
-                                <input type="checkbox" name="quest5" value="Нужно пользоваться кремом не менее 2х недель">
+                                <input type="radio" name="quest5" value="Нужно пользоваться кремом не менее 2х недель">
                                 <span class="answer">Нужно пользоваться кремом не менее 2х недель</span>
                             </label>
                         </div>
@@ -402,17 +403,71 @@
                         <div class="button button-show-result disabled">
                             Подтвердить ответ
                         </div>
-                        <button type="submit" class="button next-question hidden">
+                        <div class="button get-results next-question hidden">
                             Завершить
-                        </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </form>
 
+        <div class="result result-wrong">
+            <div class="wrapper">
+                <div class="result__title">
+                    Вы прошли обучение по видео модулю Уход за чувствительной кожей от Eucerin
+                </div>
+                <div class="result__text">
+                    К сожалению, Вы ответили верно только на <b class="result-count">79%</b> вопросов.
+                </div>
+                <div class="result__text">
+                    <b>Предлагаем Вам еще раз ознакомиться с данным модулем</b> 
+                </div>
+                <div class="result__img">
+                    <img src="/static/img/content/new-result3.png" alt="">
+                </div>
+            </div>
+            <div class="result__footer">
+                <div class="wrapper">
+                    <a href="#" class="button button-modules">
 
+                        К обучению
 
-        <script src="static/js/test.min.js"></script>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="result result-pas">
+            <div class="wrapper">
+                <div class="result__title">
+                    Поздравляем, Вы успешно прошли обучение по видео модулю Уход за чувствительной кожей от Eucerin
+                </div>
+                <div class="result__text">
+                    Вы ответили верно на <b class="result-count">80%</b> вопросов.
+                </div>
+                <div class="result__text">
+                    <b>Баллы за успешное обучение будут начислены в Вашем личном кабинете.</b> 
+                </div>
+                <div class="result__img">
+                    <img src="/static/img/content/new-result3.png" alt="">
+                    <div class="result__img-text">
+                        Оставьте отзыв о продукте
+                        <span>и получите 100 баллов</span>
+                    </div>
+                </div>
+            </div>
+            <div class="result__footer">
+                <div class="wrapper">
+                    <a href="#" class="button button-modules">
+
+                        Оставить отзыв
+
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="/static/js/test.min.js"></script>
     </body>
 
 </html>

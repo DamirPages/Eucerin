@@ -50,7 +50,8 @@
             (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
         </script>
 
-        <link href="/static/css/review.min.css" rel="stylesheet" type="text/css">
+        <link href="/static/css/calendar.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/css/datepicker.min.css">
     </head>
 
     <body class="page">
@@ -86,7 +87,7 @@
             <div class="welcom__container">
                 <div class="welcom__main">
                     <div class="wrapper">
-                        <div class="review-block">
+                        <div class="calendar-block">
                             <a href="#" class="back-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <path d="M19.5 12L4.5 12M4.5 12L11.25 18.75M4.5 12L11.25 5.25" stroke="#98999E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -94,21 +95,25 @@
                                 Вернуться в меню
                             </a>
                             <div class="learnblock__name">
-                                Получить баллы за отзыв
+                                Записаться на вебинар
                             </div>
-                            <div class="review-block-text">
-                                Напишите отзыв о товаре на сайтах otzovik, irecommend и получите дополнительные баллы
+                            <div class="calendar-links">
+                                <a href="#" class="calendar-link">Оффлайн тренинг</a>
+                                <a href="#" class="calendar-link active">Вебинар</a>
                             </div>
-                            <form action="#" class="review-block-form">
-                                <div class="review-block-textarea">
-                                    <textarea name="review" id="review" cols="30" rows="10" required></textarea>
+                            <form action="">
+                                <div id="calendar" class="calendar"></div>
+                                <input type="text" name="date" id="calendar-input" class="calendar-input" required>
+                                <div class="calendar-myevents">
+                                    <div class="calendar-myevent">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00005 16.2C10.9096 16.2 12.741 15.4414 14.0912 14.0912C15.4415 12.7409 16.2 10.9095 16.2 8.99999C16.2 7.09043 15.4415 5.25908 14.0912 3.90882C12.741 2.55856 10.9096 1.79999 9.00005 1.79999C7.09049 1.79999 5.25914 2.55856 3.90888 3.90882C2.55862 5.25908 1.80005 7.09043 1.80005 8.99999C1.80005 10.9095 2.55862 12.7409 3.90888 14.0912C5.25914 15.4414 7.09049 16.2 9.00005 16.2ZM12.3363 7.83629C12.5003 7.66655 12.591 7.4392 12.589 7.20323C12.5869 6.96725 12.4923 6.74152 12.3254 6.57465C12.1585 6.40778 11.9328 6.31313 11.6968 6.31108C11.4608 6.30903 11.2335 6.39975 11.0637 6.56369L8.10005 9.52739L6.93635 8.36369C6.76661 8.19975 6.53927 8.10903 6.30329 8.11108C6.06731 8.11313 5.84158 8.20778 5.67471 8.37465C5.50784 8.54152 5.41319 8.76725 5.41114 9.00323C5.40909 9.2392 5.49981 9.46655 5.66375 9.63629L7.46375 11.4363C7.63252 11.605 7.8614 11.6998 8.10005 11.6998C8.3387 11.6998 8.56757 11.605 8.73635 11.4363L12.3363 7.83629Z"
+                                            fill="#A70532" />
+                                        </svg>
+                                        Выбранная дата вебинара 25 декабря 2023 года с 18.00-20.00
+                                    </div>
                                 </div>
-                                <div class="review-block-instruction">
-                                    1. Напишите отзыв на одном из сайтов, otzovik, irecommend
-                                    <br>2. Скопируйте ссылку на отзыв
-                                    <br>3. Вставьте ссылку в специальное окно и нажмите кнопку "Отправить"
-                                </div>
-                                <button type="submit" class="button button-send">Отправить</button>
+                                <button type="submit" class="button button-send">Подтвердить выбранную дату</button>
                             </form>
                         </div>
                     </div>
@@ -116,23 +121,49 @@
             </div>
         </div>
 
-        <div class="modal modal-lc modal-review">
+        <div class="modal modal-lc modal-calendar">
             <div class="modal__container">
                 <div class="modal__title">
-                    Ваш отзыв отправлен на модерацию
+                    Вы записаны на тренинг
                 </div>
                 <div class="modal__text">
-                    После проверки вам будут начислены
-                    <br>дополнительные баллы
+                    25 декабря 2023 года
+                    <br>с 18.00-20.00
                 </div>
-                <div class="modal__button" data-close-modal=".modal-review">
+                <div class="modal__button" data-close-modal=".modal-calendar">
                     OK
                 </div>
             </div>
             <div class="modal__bg"></div>
         </div>
 
-        <script src="/static/js/review.min.js"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker-full.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/locales/ru.js"></script>
+
+        <script>
+            const eventsList = [{
+                eventTitle: 'Вебинар',
+                eventPlace: 'г.Москва Столешников пер. д.8',
+                eventTime: 'с 18.00-20.00',
+                eventDate: '2023-12-25',
+                buy: false,
+            },{
+                eventTitle: 'Вебинар',
+                eventPlace: 'г.Москва Столешников пер. д.8',
+                eventTime: 'с 18.00-20.00',
+                eventDate: '2023-12-31',
+                buy: false,
+            },{
+                eventTitle: 'Вебинар',
+                eventPlace: 'г.Москва Столешников пер. д.8',
+                eventTime: 'с 18.00-20.00',
+                eventDate: '2023-12-22',
+                buy: true,
+            }];
+        </script>
+        <script src="/static/js/calendar.min.js"></script>
 
     </body>
 
