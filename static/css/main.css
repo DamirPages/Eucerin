@@ -760,6 +760,11 @@ body.blur > *:not(.modal):not(.signin__modal) {
   max-width: 390px;
   width: 100%;
 }
+@media only screen and (max-width: 992px) {
+  .mobile-page > * {
+    max-width: 100%;
+  }
+}
 
 .nice-select.invalid {
   border-color: red !important;
