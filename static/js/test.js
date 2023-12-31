@@ -23,9 +23,13 @@ testContainers.forEach((container, index) => {
             calcResult();
         }
         testContainers.forEach(item => item.classList.remove('active'));
-        testContainers[index + 1].classList.add('active');
+        if (testContainers && testContainers[index + 1]) {
+            testContainers[index + 1].classList.add('active');
+        }
         rounds.forEach(item => item.classList.remove('active'));
-        rounds[index + 1].classList.add('active');
+        if (rounds && rounds[index + 1]) {
+            rounds[index + 1].classList.add('active');
+        }
         document.querySelector('#current-test-answer').innerHTML = (index + 2);
         window.scrollTo(0, 0);
     });
@@ -64,13 +68,10 @@ function calcResult(){
         return acc;
     }, 0);
     const percent = Math.round(trueResults * 100 / results.length);
-    resultElement.forEach(item => {
-        item.textContent = percent + '%';
-        testElement.classList.add('hidden-block');
-        if(percent > 79){
-            pass.classList.remove('result-pas');
-        }else{
-            wrong.classList.remove('result-wrong');
-        }
-    })
+    if(percent > 79){
+        pass.classList.remove('result-pas');
+    }else{
+        wrong.classList.remove('result-wrong');
+    }
+    testElement.classList.add('hidden-block');
 }
