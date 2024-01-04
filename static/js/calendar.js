@@ -1,5 +1,3 @@
-import { initHandlersModal } from "../../components/modals/modals";
-
 const elem = document.querySelector('#calendar');
 const calendarInput = document.querySelector('#calendar-input');
 
@@ -52,4 +50,3 @@ function formatDate(stringDate){
     const day = ('0' + date.getDate()).slice(-2);
     return `${year}-${month}-${day}`;
 }
-initHandlersModal();
